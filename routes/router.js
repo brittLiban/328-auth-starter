@@ -8,7 +8,7 @@ const authRouter = Router();
 authRouter.get('/admin', pageController.adminPage);     //displays admin (restricted) content
 authRouter.get('/user', pageController.userPage);    //displays user content
 
-//register
+//register - get to nav to page - post to psot something to db
 authRouter.get('/register', authController.registerPage);
 authRouter.post('/register', authController.register)
 
